@@ -61,6 +61,12 @@ icon-icon {
     color: #979797;
 }
 
+input:focus {
+    box-shadow: 0,0,0,0;
+    border: 0 none;
+    outline: 0;
+} 
+
 .search input::placeholder {
     display: flex;
     text-align: center;
@@ -72,4 +78,8 @@ icon-icon {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+
 
