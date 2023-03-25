@@ -97,7 +97,6 @@ section {
 }
 
 .container {
-    background-color: #dd4141;
     width: 614px;
     height: 800px;
     display: flex;
@@ -152,4 +151,72 @@ p {
     height: 500px;
     background-color: #c97e7e;
     margin-top: -208px;
+
+}
+
+/* ==================== TIMELINE (CONTEÚDO) ============ */
+
+.perfis {
+    background-color: #ffffff;
+    width: 614px;
+    height: 712px;
+    margin-top: 24px;
+    border: 1px solid #DBDBDB;
+   
+}
+
+
+.perfil>img {
+    width: 32px;
+    height: 32px;
+}
+
+.perfil {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.perfil>p {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil>div {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 460px;
+}
+
+.likes {
+    background-color: #ffffff;
+    height: 44px;
+    margin-top: 0;
+    display: flex;
+
+    align-items: center;
+}
+
+.like {
+    width: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.f {
+  width: 50px;  
+  
+  margin-left: 450px;
 }
