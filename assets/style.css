@@ -22,6 +22,10 @@ header {
     z-index: 1;
 }
 
+.header-mobile {
+    display: none;
+}
+
 .top {
     height: 54px;
     width: 935px;
@@ -97,7 +101,6 @@ section {
 }
 
 .container {
-    width: 614px;
     height: 800px;
     display: flex;
     margin-top: 88px;
@@ -139,19 +142,11 @@ section {
     height: 66px;
 }
 
-p {
+.user-name {
     width: 58px;
     height: 19px;
     display: flex;
     justify-content: center;
-}
-
-.sidebar {
-    width: 293px;
-    height: 500px;
-    background-color: #c97e7e;
-    margin-top: -208px;
-
 }
 
 /* ==================== TIMELINE (CONTEÚDO) ============ */
@@ -162,7 +157,7 @@ p {
     height: 712px;
     margin-top: 24px;
     border: 1px solid #DBDBDB;
-   
+
 }
 
 
@@ -209,14 +204,137 @@ p {
 
 .like {
     width: 200px;
-
     display: flex;
     justify-content: space-around;
     margin-left: 15px;
 }
 
-.f {
-  width: 50px;  
-  
-  margin-left: 450px;
+
+/* ========================== sidebar ======================*/
+
+.sidebar {
+    width: 300px;
+    height: 500px;
+}
+
+.sidebar-cab {
+    display: flex;
+    align-items: center;
+}
+
+.sugestao,
+.contato,
+.sugestoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugestao,
+.sugestoes,
+.sidebar-cab {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+
+.seguir-1,
+.seguir-2,
+.seguir-3,
+.seguir-4,
+.seguir-5 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #139EF2;
+}
+
+.sidebar-cab {
+    margin-top: 30px;
+}
+
+.ver {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.seguir-1 {
+    margin-left: 66px;
+}
+
+.seguir-2 {
+    margin-left: 124px;
+}
+
+.seguir-3 {
+    margin-left: 50px;
+}
+
+.seguir-4 {
+    margin-left: 66px;
+}
+
+.seguir-5 {
+    margin-left: 89px;
+}
+
+
+.segue {
+    color: #8E8E8E;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer {
+    display: none;
+}
+
+/* ===================== MOBIBLE =======================*/
+
+@media(max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media(max-width: 614px) {
+    header {
+        display: none;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .header-mobile {
+        display: flex;
+        background-color: #FFFFFF;
+        height: 54px;
+        border-bottom: 1px solid #DBDBDB;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-mobile>img {
+        width: 103px;
+        height: 29px;
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+        height: 54px;
+        background-color: #FFFFFF;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
 }
